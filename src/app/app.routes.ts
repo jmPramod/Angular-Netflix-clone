@@ -8,4 +8,11 @@ export const routes: Routes = [
         (a) => a.LoginComponent
       ),
   },
+  {
+    path: 'browse',
+    loadComponent: () =>
+      import('../app/Components/browse/browse.component').then(
+        (a) => a.BrowseComponent
+      ),
+  },
 ];
