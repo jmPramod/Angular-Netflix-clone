@@ -1,0 +1,20 @@
+<header class="min-h-[68px] z-10 bg-gray-900 sticky top-0 flex items-center justify-between px-7">
+  <!-- logo+nav items -->
+  <div class="flex gap-5">
+    <img src="assets/images/logo.png" alt="" class="max-w-[150px]" />
+
+    <ul class="flex items-center" *ngFor="let item of navList">
+      <li class="text-neutral-200 hover:text-gray-400 transition-[0.5s]">
+        {{ item }}
+      </li>
+    </ul>
+  </div>
+  <!-- welcome user + profile image  + signout button-->
+  <div class="flex items-center gap-5"><a href="/" class="text-white">
+    <span>Welcome <strong>PJ</strong></span>
+  </a>
+
+<img [src]="userImage"  class="max-w-[40px] rounded-full  " alt="">
+<a href="/" class="text-white border p-2 rounded-lg hover:text-gray-900 hover:bg-white  " > Sign out</a>
+</div>
+</header>
